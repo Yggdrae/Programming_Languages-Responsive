@@ -1,0 +1,107 @@
+body{
+    background: url('./img/bg.jpg');
+    font-family: 'Courier New', monospace;	
+}
+
+h1{
+    color: #efefef;
+    position: static;
+    display: grid;
+    justify-content: space-evenly;
+    font-size: 200%;
+}
+
+#container{
+    width: 90lvw;
+    background-color: #efefef;
+    margin: 50px auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.card {
+    background-color: #c0c0c0;
+    width: 30%;
+    border: solid medium;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.imgDiv{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 20lvw;
+    height: 20lvh;
+}
+
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.langName {
+    display: grid;
+    justify-content: space-around;
+    font-size: 130%;
+    font-style: oblique;
+}
+
+.langDesc {
+    font-size: 100%;
+}
+
+.knowMore {
+    display: flex;
+    justify-content: center;
+    border: solid thin;
+    border-radius: 30px;
+    padding: 10px;
+    align-self:center;
+    background-color: black;
+    color: #efefef;
+    cursor: pointer;
+}
+
+.knowMore:hover{
+    opacity: .7;
+}
+
+@media (max-width: 750px) {
+    .card {
+        background-color: #c0c0c0;
+        width: 80%;
+        border: solid medium;
+        border-radius: 30px;
+        margin: 10px 0px;
+        padding: 10px;
+    }
+
+    .langName {
+        font-size: 100%;
+    }
+    
+    .langDesc {
+        font-size: 80%;
+    }
+
+    .textDiv{
+        padding: 0;
+    }
+}
